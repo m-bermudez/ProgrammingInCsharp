@@ -10,6 +10,7 @@ namespace IntroductionToProgramming
         // 2. Constant and Readonly example
         const double Pi = 3.14159; // Constants are compile-time values
         static readonly string readonlyMessage = "This value is readonly"; // Can be assigned only in constructor or declaration
+        const decimal my_var = 14;
 
         public static void RunExample()
         {

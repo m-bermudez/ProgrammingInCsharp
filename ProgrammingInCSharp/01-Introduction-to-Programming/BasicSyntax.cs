@@ -33,6 +33,7 @@ namespace IntroductionToProgramming
             char singleCharacter = 'A';        // Character
             string text = "Hello, C#";         // String
             bool isProgrammingFun = true;      // Boolean (true/false)
+            decimal myVar = 2351790;           // Decimal (used for money)
 
             // Print variable values
             Console.WriteLine($"Integer: {integer}");
@@ -40,6 +41,7 @@ namespace IntroductionToProgramming
             Console.WriteLine($"Character: {singleCharacter}");
             Console.WriteLine($"String: {text}");
             Console.WriteLine($"Boolean: {isProgrammingFun}");
+            Console.WriteLine($"Decimal: {myVar}");
         }
 
         // 2. Basic Arithmetic Operations Example
@@ -65,7 +67,7 @@ namespace IntroductionToProgramming
 
             // Read input from the user and print a greeting message
             Console.Write("Enter your name: ");
-            string name = Console.ReadLine();
+            string? name = Console.ReadLine();
             Console.WriteLine($"Hello, {name}!");
         }
 

@@ -10,7 +10,7 @@ namespace IntroductionToProgramming//ProgrammingInCSharp
             Console.WriteLine("Running Introduction to Programming (Basic Syntax)...");
             // IntroductionToProgramming.VariablesAndDataTypes.RunExample();
             // IntroductionToProgramming.ControlStructures.RunExample();
-            IntroductionToProgramming.BasicSyntax.RunExample();
+            // IntroductionToProgramming.BasicSyntax.RunExample();
 
             // Data Structures
             // Console.WriteLine("Running Data Structures...");
