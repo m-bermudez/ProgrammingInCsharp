@@ -88,7 +88,7 @@ namespace DataStructures.Dictionaries
             };
 
             // Using TryGetValue to safely get values
-            if (studentGrades.TryGetValue(2, out string grade))
+            if (studentGrades.TryGetValue(2, out string? grade))
             {
                 Console.WriteLine($"Student 2's grade: {grade}");
             }

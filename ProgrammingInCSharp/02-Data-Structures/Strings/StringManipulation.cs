@@ -32,7 +32,7 @@ namespace DataStructures.Strings
             // String declaration and initialization
             string message = "Hello, C#!";
             string emptyString = ""; // Empty string
-            string nullString = null; // Null string
+            string? nullString = null; // Null string
 
             Console.WriteLine($"Message: {message}");
             Console.WriteLine($"Empty String: '{emptyString}'");

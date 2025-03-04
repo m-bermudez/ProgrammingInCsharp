@@ -49,15 +49,16 @@ namespace IntroductionToProgramming
         {
             Console.WriteLine("\n-- Arithmetic Operations --");
 
-            int a = 10;
-            int b = 3;
+            int a = 10405;
+            int b = 3223;
 
             // Perform arithmetic operations and print results
             Console.WriteLine($"Addition: {a} + {b} = {a + b}");
             Console.WriteLine($"Subtraction: {a} - {b} = {a - b}");
             Console.WriteLine($"Multiplication: {a} * {b} = {a * b}");
             Console.WriteLine($"Division: {a} / {b} = {a / b}");      // Integer division
-            Console.WriteLine($"Modulus: {a} % {b} = {a % b}");        // Remainder of division
+            Console.WriteLine($"Modulus: {a} % {b} = {a % b}");       // Remainder of division
+            Console.WriteLine($"Combination: ({a} + {b}) * ({a} / {b}) - {b} = {((a + b) * (a / b) - b )}");
         }
 
         // 3. Console Input/Output Example
