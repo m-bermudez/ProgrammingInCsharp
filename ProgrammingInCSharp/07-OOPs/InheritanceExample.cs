@@ -53,6 +53,47 @@ namespace OOPs.Inheritance
         }
     }
 
+    public class Employee
+    {
+        private string _name;
+        private string _department;
+        private int _salary;
+
+        public Employee(string name, string department, int salary)
+        {
+            _name = name;
+            _department = department;
+            _salary = salary;
+        }
+
+        public virtual void DisplayInfo()
+        {
+            Console.WriteLine($"Employee: {_name}");
+            Console.WriteLine($"Department: {_department}");
+            Console.WriteLine($"Salary: {_salary}");
+        }
+    }
+
+    public class Manager : Employee
+    {
+        private string _name;
+        private string _department;
+        private int _salary;
+
+        public Manager(string name, string department, int salary) : base(name, department, salary)
+        {
+            _name = name;
+            _department = department;
+            _salary = salary;
+        }
+
+        public override void DisplayInfo()
+        {
+            base.DisplayInfo();
+            Console.WriteLine($"My name is {_name} and my role is {_department}. I currently make about {_salary} per year.");
+        }
+    } 
+
     public class InheritanceExample
     {
         public static void RunExample()
@@ -66,6 +107,9 @@ namespace OOPs.Inheritance
 
             Truck myTruck = new Truck("Volvo", "VNR", 2018, 4000);
             myTruck.DisplayInfo();
+
+            Manager myManager = new Manager("John Doe", "Sales", 100000);
+            myManager.DisplayInfo();
         }
     }
 }
